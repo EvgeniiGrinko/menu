@@ -1,0 +1,16 @@
+a {
+  color: rgb(36, 36, 43);
+  text-decoration: none;
+}
+
+a:hover {
+  color: brown;
+  cursor: pointer;
+}
+#menu {
+  background-color: cornflowerblue;
+  padding: 1.2em;
+}
+div {
+  padding: 5px;
+}
