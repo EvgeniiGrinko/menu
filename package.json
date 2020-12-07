@@ -2,13 +2,22 @@
   "name": "menu",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "./node_modules/.bin/babel script.jsx -o script.js -w"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Evgenii Grinko",
+  "license": "MIT",
+  "babel": {
+    "presets": [
+      "react"
+    ]
+  },
   "dependencies": {
     "prettier": "^2.2.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-react": "^6.24.1"
   }
 }
