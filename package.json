@@ -4,7 +4,10 @@
   "description": "",
   "main": "script.js",
   "scripts": {
-    "build": "./node_modules/.bin/babel script.jsx -o script.js -w"
+    "build": "./node_modules/.bin/babel script.jsx -o script.js -w",
+    "copy": "./node_modules/.bin/babel ./node_modules/react/dist/react.js -o react.js",
+    "copy-react": "copyfiles node_modules/react/dist/react.js inFile react.js",
+    "copy-react-dom": "./node_modules/.bin/babel script.jsx -o script.js -w"
   },
   "author": "Evgenii Grinko",
   "license": "MIT",
@@ -14,7 +17,9 @@
     ]
   },
   "dependencies": {
-    "prettier": "^2.2.1"
+    "prettier": "^2.2.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
